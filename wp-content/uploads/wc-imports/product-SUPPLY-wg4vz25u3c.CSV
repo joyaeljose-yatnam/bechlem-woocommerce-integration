@@ -1,0 +1,95 @@
+IDITEM;IDBRAND;BRAND;ARTNR;PARTNR;TEXT;IDCATEGORY;CATEGORY;COLOR;ISCOMPATIBLE;NZVE;NZYIELD;COVERAGE;MEASURES;CONTENT;CONTENT_ML;CONTENT_GRAMM;CONTENT_CHAR;GERMAN_GROUP_NO;SUPPLYSERIES;EAN;NZPICTURE
+50045805;20000849;KMP;1505,0006;C68;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;T;1;420;;;420 pages, 13,00 ml;13;;;1505;;4011324505061;134400
+50046062;20000849;KMP;1505,0046;C71;Ink cartridge light magenta;145222240;Ink cartridge light magenta;photomagenta;T;1;;;;13,00 ml;13;;;;;4011324150568;134403
+50042922;20001109;Pelikan;627650;1121;Toner cartridge black;145211100;Toner black;black;T;1;3900;5;;3.900 pages/5%, 1x170 grams, Pack=1;;170;;1121;;4018474627650;19234
+50042829;20001109;Pelikan;629517;1176;Toner cartridge;145211200;Toner cyan;black;T;1;2100;5;;2.100 pages/5%, 1x120 grams, Pack=1;;120;;1176;;4018474629517;19261
+50043546;20001109;Pelikan;361752;C27;Ink cartridge black;145222110;Ink cartridge black;black;T;1;5075;;;5.075 pages, 13,00 ml;13;;;1503;;4018474101273;35296
+50043547;20001109;Pelikan;361707;C28;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;T;1;1365;;;1.365 pages, 13,00 ml;13;;;1505;;4012700361707;35291
+50043549;20001109;Pelikan;361721;C30;Ink cartridge yellow;145222250;Ink cartridge yellow;yellow;T;1;950;;;950 pages, 13,00 ml;13;;;1505;;4012700361721;35293
+50043550;20001109;Pelikan;361738;C32;Ink cartridge light cyan;145222220;Ink cartridge light cyan;photocyan;T;1;;;;13,00 ml;13;;;;;4018474361738;35294
+50043551;20001109;Pelikan;361745;C33;Ink cartridge light magenta;145222240;Ink cartridge light magenta;photomagenta;T;1;;;;13,00 ml;13;;;;;4018474361745;35295
+50027529;20000264;Canon;0624 B 001;CLI-8 PC;Ink cartridge light cyan;145222220;Ink cartridge light cyan;photocyan;F;1;5715;;;5.715 pages, 13,00 ml;13;;;;CLI-8;4960999272894;66945
+50027530;20000264;Canon;0625 B 001;CLI-8 PM;Ink cartridge light magenta;145222240;Ink cartridge light magenta;photomagenta;F;1;5630;;;5.630 pages, 13,00 ml;13;;;;CLI-8;4960999272931;66946
+50062063;20000849;KMP;0858,4000;C-T7;Toner cartridge black economy;145211100;Toner black;black;T;1;2500;5;;2.500 pages/5%, 160 grams;;160;;858;;4011324085822;133931
+50049655;20000849;KMP;1505,0003;C67;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;T;1;420;;;420 pages, 13,00 ml;13;;;1505;;4011324505030;134398
+50054804;20000264;Canon;2934 B 010;CLI-521;Ink cartridge multi pack C,M,Y;145222400;Ink cartridge multi pack;cyan magenta yellow;F;3;446;;;446 pages, 9,00 ml, Pack=3;9;;;;CLI-521;8714574525808;370807
+50053817;20000264;Canon;2936 B 001;CLI-521 Y;Ink cartridge yellow;145222250;Ink cartridge yellow;yellow;F;1;477;;;477 pages, 9,00 ml;9;;;;CLI-521;4960999577531;45034
+50050848;20000264;Canon;2934 B 001;CLI-521 C;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;F;1;448;;;448 pages, 9,00 ml;9;;;;CLI-521;4960999577494;45032
+50050865;20000849;KMP;1504,0001;C66;Ink cartridge black pigmented;145222110;Ink cartridge black;black;T;1;505;;;505 pages, 26,00 ml;26;;;1504;;4011324504019;134395
+50030979;20000849;KMP;1176,0000;C-T15;Toner cartridge black;145211100;Toner black;black;T;1;2000;;;2.000 pages, 130 grams;;130;;1176;;4011324117608;134066
+50030980;20000849;KMP;1121,0000;C-T16;Toner cartridge black;145211100;Toner black;black;T;1;2500;5;;2.500 pages/5%;;;;1121;;4011324112108;134038
+50048616;20000264;Canon;2932 B 001;PGI-520 PGBK;Ink cartridge black pigmented;145222110;Ink cartridge black;black;F;1;324;;;324 pages, 19,00 ml;19;;;;PGI-520;4960999577456;67009
+50060064;20000264;Canon;2935 B 001;CLI-521 M;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;F;1;445;;;445 pages, 9,00 ml;9;;;;CLI-521;4960999577517;45033
+50058009;20000849;KMP;1510,0003;C74;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;T;1;535;;;535 pages, 9,00 ml;9;;;1510;;4011324151039;134410
+50048748;20000264;Canon;2933 B 001;CLI-521 BK;Ink cartridge foto black;145222110;Ink cartridge black;photoblack;F;1;1250;;;1.250 pages, 9,00 ml;9;;;;CLI-521;4960999577470;45031
+50074214;20001109;Pelikan;4103291;P19;Ink cartridge multi pack C,M,Y;145222400;Ink cartridge multi pack;cyan magenta yellow;T;3;755;;;755 pages, 9,00 ml, Pack=3;9;;;;;4018474103291;35303
+50074202;20001109;Pelikan;4103192;C34;Ink cartridge black;145222110;Ink cartridge black;black;T;1;250;;;250 pages, 20,00 ml;20;;;1500;;4018474103192;51163
+50074203;20001109;Pelikan;4103239;C36;Ink cartridge black pigmented;145222110;Ink cartridge black;black;T;1;405;;;405 pages, 19,00 ml;19;;;1508;;4018474103239;35298
+50074204;20001109;Pelikan;4103246;C37;Ink cartridge foto black;145222110;Ink cartridge black;photoblack;T;1;3425;;;3.425 pages, 9,00 ml;9;;;1509;;4018474103246;35299
+50074205;20001109;Pelikan;4103253;C38;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;T;1;755;;;755 pages, 9,00 ml;9;;;1510;;4018474103253;35300
+50074206;20001109;Pelikan;4103260;C39;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;T;1;708;;;708 pages, 9,00 ml;9;;;1510;;4018474103260;35301
+50074207;20001109;Pelikan;4103277;C40;Ink cartridge yellow;145222250;Ink cartridge yellow;yellow;T;1;662;;;662 pages, 9,00 ml;9;;;1510;;4018474103277;35302
+50013796;20000849;KMP;0958,0001;C15;Ink cartridge black;145222110;Ink cartridge black;black;T;1;210;;;210 pages, 17,00 ml;17;;;958;;4011324958010;133945
+50013797;20000849;KMP;0958,0003;C16;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;T;1;280;;;280 pages, 17,00 ml;17;;;;;4011324958034;133946
+50013798;20000849;KMP;0958,0006;C17;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;T;1;280;;;280 pages, 17,00 ml;17;;;;;4011324958065;133947
+50013799;20000849;KMP;0958,0009;C18;Ink cartridge yellow;145222250;Ink cartridge yellow;yellow;T;1;280;;;280 pages, 17,00 ml;17;;;;;4011324958096;133948
+50013800;20000849;KMP;0958,0043;C19;Ink cartridge light cyan;145222220;Ink cartridge light cyan;photocyan;T;1;;;;17,00 ml;17;;;958;;4011324958430;133949
+50013801;20000849;KMP;0958,0046;C20;Ink cartridge light magenta;145222240;Ink cartridge light magenta;photomagenta;T;1;;;;17,00 ml;17;;;958;;4011324958461;133950
+50001415;20000264;Canon;1557 A 003;FX-3;Toner cartridge black;145211100;Toner black;black;F;1;2700;5;;2.700 pages/5%;;;;858;;4960999830353;66957
+50009064;20001109;Pelikan;619239;858;Toner cartridge black recycled;145211100;Toner black;black;T;1;2700;5;;2.700 pages/5%, 1x155 grams, Pack=1;;155;;858;;4018474619235;5280
+50019850;20001109;Pelikan;339379;C18;Ink cartridge black;145222110;Ink cartridge black;black;T;1;370;;;370 pages, 13,00 ml;13;;;958;;4018474339379;35216
+50019851;20001109;Pelikan;339386;C19;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;T;1;440;;;440 pages, 13,00 ml;13;;;;;4018474339386;35215
+50019852;20001109;Pelikan;339393;C20;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;T;1;440;;;440 pages, 13,00 ml;13;;;;;4018474339393;35214
+50019853;20001109;Pelikan;339409;C21;Ink cartridge yellow;145222250;Ink cartridge yellow;yellow;T;1;440;;;440 pages, 13,00 ml;13;;;;;4018474339409;35218
+50041342;20000849;KMP;1500,HC01;C59;Ink cartridge black;145222110;Ink cartridge black;black;T;1;300;;;300 pages, 22,00 ml;22;;;1500;;4011324150025;
+50041343;20000849;KMP;1500,4001;C57;Ink cartridge black;145222110;Ink cartridge black;black;T;1;195;;;195 pages, 16,00 ml;16;;;1500;;4011324150018;134392
+50041345;20000849;KMP;1501,4030;C58;Ink cartridge color;145222310;Ink cartridge color;color;T;1;155;;;155 pages, 12,00 ml;12;;;1501;;4011324150117;134393
+50038802;20000264;Canon;4706 A 027;BCI-6;Ink cartridge multi pack C,M,Y + Paper SG-101;145222400;Ink cartridge multi pack;cyan magenta yellow;F;3;;;;3x13ml;;;;;BCI-6;8714574987408;9735
+50028832;20000264;Canon;4706 A 022;BCI-6;Ink cartridge multi pack C,M,Y;145222400;Ink cartridge multi pack;cyan magenta yellow;F;3;280;;;3x13ml;;;;;BCI-6;8714574959580;66888
+50027090;20000264;Canon;0620 B 001;CLI-8 BK;Ink cartridge black;145222110;Ink cartridge black;black;F;1;400;;;400 pages, 13,00 ml;13;;;;CLI-8;4960999273235;66941
+50027091;20000264;Canon;0621 B 001;CLI-8 C;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;F;1;420;;;420 pages, 13,00 ml;13;;;1505;CLI-8;4960999272672;66942
+50027092;20000264;Canon;0622 B 001;CLI-8 M;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;F;1;478;;;478 pages, 13,00 ml;13;;;1505;CLI-8;4960999272702;66944
+50027093;20000264;Canon;0623 B 001;CLI-8 Y;Ink cartridge yellow;145222250;Ink cartridge yellow;yellow;F;1;530;;;530 pages, 13,00 ml;13;;;1505;CLI-8;4960999272825;66948
+50027094;20000264;Canon;0628 B 001;PGI-5 BK;Ink cartridge black pigmented;145222110;Ink cartridge black;black;F;1;505;;;505 pages, 26,00 ml;26;;;;PGI-5;4960999273020;67018
+50027095;20000264;Canon;0617 B 001;CL-41;Printhead cartridge color;145221310;Printhead cartridge color;color;F;1;308;;;308 pages, 12,00 ml;12;;;1501;CL-41;4960999273433;66900
+50027096;20000264;Canon;0615 B 001;PG-40;Printhead cartridge black;145221110;Printhead cartridge black;black;F;1;;;;16,00 ml;16;;;1500;PG-40;4960999273372;66985
+50027097;20000264;Canon;0263 B 002;FX-10;Toner cartridge black;145211100;Toner black;black;F;1;2000;;;2.000 pages;;;;1176;;4960999270616;66956
+50028593;20000849;KMP;1119,0000;C-T14;Toner cartridge black;145211100;Toner black;black;T;1;3500;5;;3.500 pages/5%, 240 grams;;240;;1119;;4011324111903;134037
+50027409;20000264;Canon;0616 B 001;PG-50;Printhead cartridge black;145221110;Printhead cartridge black;black;F;1;;;;22,00 ml;22;;;1500;;4960999273402;66986
+50066059;20001109;Pelikan;361813;P16;Ink cartridge multi pack Bk,C,M,Y;145222400;Ink cartridge multi pack;black cyan magenta yellow;T;4;593;;;1 x 27 ml + 3 x 13 ml;27;;;;;4018474361813;51160
+50033210;20000264;Canon;0617 B 008;CL-41 GP 501;Printhead cartridge color +GP-501 10x15cm 100 sheet;145221310;Printhead cartridge color;color;F;1;312;;;312 pages, 12,00 ml;12;;;1501;CL-41;8714574971384;14356
+50033211;20000264;Canon;0620 B 011;CLI-8 PP-101;Ink cartridge multi pack BK,C,M,Y +PP-101 10x15cm 50 sheet;145222400;Ink cartridge multi pack;black cyan magenta yellow;F;4;;;;13,00 ml, Pack=4;13;;;;CLI-8;8714574971391;14354
+50071371;20000264;Canon;0628 B 025;PGI-5 BK;Ink cartridge black pigmented twin pack;145222110;Ink cartridge black;black;F;2;800;;;800 pages, 26,00 ml, Pack=2;26;;;;PGI-5;8714574538518;108402
+50012263;20000264;Canon;0985 A 002;BCI-5 BK;Ink cartridge black;145222110;Ink cartridge black;black;F;1;240;;;240 pages, 13,00 ml;13;;;958;BCI-5;4960999866291;4077
+50074176;20001109;Pelikan;4103208;C35;Ink cartridge color;145222310;Ink cartridge color;color;T;3;202;;;202 pages, 6,00 ml, Pack=3;6;;;1501;;4018474103208;51164
+50034729;20000264;Canon;1557 A 020;FX-3;Toner cartridge black twin pack;145211100;Toner black;black;F;2;2700;5;;2.700 pages/5%, Pack=2;;;;858;;;2555
+50035656;20000264;Canon;7833 A 008;CARTRIDGE T;Toner cartridge black twin pack;145211100;Toner black;black;F;2;3500;5;;3.500 pages/5%, Pack=2;;;;;;8714574981345;14352
+50036943;20001109;Pelikan;358844;C26P;Ink cartridge black pigmented Power-Pad;145222110;Ink cartridge black;black;T;3;;;;24,00 ml, Pack=3;24;;;1504;;4018474358844;45900
+50036944;20001109;Pelikan;358851;C27P;Power-Pads black;145222600;Ink Others;black;T;3;;;;4,50 ml, Pack=3;4,5;;;1503;;4018474358851;45901
+50036945;20001109;Pelikan;358868;C31P;Ink cartridge multi pack cyan magenta yellow Power-Pad;145222400;Ink cartridge multi pack;cyan magenta yellow;T;9;;;;4,50 ml, Pack=9;4,5;;;1505;;4018474358868;45902
+50014291;20000264;Canon;4708 A 002;BCI-6 Y;Ink cartridge yellow;145222250;Ink cartridge yellow;yellow;F;1;210;5;;210 pages/5%, 13,00 ml;13;;;;BCI-6;4960999864761;66898
+50014292;20000264;Canon;4707 A 002;BCI-6 M;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;F;1;280;;;280 pages, 13,00 ml;13;;;;BCI-6;4960999864792;66893
+50014293;20000264;Canon;4706 A 002;BCI-6 C;Ink cartridge cyan;145222210;Ink cartridge cyan;cyan;F;1;280;;;280 pages, 13,00 ml;13;;;;BCI-6;4960999864822;66891
+50014294;20000264;Canon;4705 A 002;BCI-6 BK;Ink cartridge black;145222110;Ink cartridge black;black;F;1;210;;;210 pages, 13,00 ml;13;;;958;BCI-6;4960999864853;66890
+50014516;20000264;Canon;4709 A 002;BCI-6 PC;Ink cartridge light cyan;145222220;Ink cartridge light cyan;photocyan;F;1;280;;;280 pages, 13,00 ml;13;;;958;BCI-6;4960999864730;66894
+50014517;20000264;Canon;4710 A 002;BCI-6 PM;Ink cartridge light magenta;145222240;Ink cartridge light magenta;photomagenta;F;1;280;;;280 pages, 13,00 ml;13;;;958;BCI-6;4960999864709;23848
+50041747;20000264;Canon;0621 B 015;CLI-8 GP-501;Ink cartridge multi pack C,M,Y + Paper GP-501;145222400;Ink cartridge multi pack;cyan magenta yellow;F;3;;;;3x13ml;;;;1505;CLI-8;8714574504681;23872
+50020207;20000264;Canon;8489 A 002;EP-27;Toner cartridge black;145211100;Toner black;black;F;1;2500;5;;2.500 pages/5%;;;;1121;;4960999201719;66955
+50017956;20000264;Canon;7833 A 002;CARTRIDGE T;Toner cartridge black;145211100;Toner black;black;F;1;3500;5;;3.500 pages/5%;;;;;;4960999113494;66949
+50020943;20000264;Canon;8955 A 001;FX-8;Toner cartridge black;145211100;Toner black;black;F;1;3500;;;3.500 pages;;;;;;0013803031805;10084073
+50026470;20001109;Pelikan;343345;;Ink cartridge multi pack Bk,C,M,Y;145222400;Ink cartridge multi pack;black cyan magenta yellow;T;4;;;;Pack=4;;;;;;4018474343345;7710
+50023767;20001109;Pelikan;623829;1119;Toner cartridge black;145211100;Toner black;black;T;1;5650;;;5.650 pages, 1x230 grams, Pack=1;;230;;1119;;4018474623829;45846
+50051035;20000849;KMP;1503,0001;C65;Ink cartridge black;145222110;Ink cartridge black;black;T;1;420;;;420 pages, 13,00 ml;13;;;1503;;4011324503012;134394
+50084911;20000264;Canon;0621 B 029;CLI-8;Ink cartridge multi pack C,M,Y;145222400;Ink cartridge multi pack;cyan magenta yellow;F;3;;;;3x13ml;;;;1505;CLI-8;8714574552569;108403
+50091097;20000264;Canon;0263 B 001;FX-9;Toner cartridge black;145211100;Toner black;black;F;1;2000;;;2.000 pages;;;;1176;;0013803049978;10073014
+50101437;20000264;Canon;0624 B 026;CLI-8 PCPM;Ink cartridge bundle PC+PM;145222400;Ink cartridge multi pack;no color;F;2;450;;;450 pages, 13,00 ml, Pack=2;13;;;;CLI-8;8714574572192;
+50093943;20000264;Canon;2932 B 012;PGI-520 PGBK;Ink cartridge black pigmented twin pack;145222110;Ink cartridge black;black;F;2;324;;;324 pages, 19,00 ml, Pack=2;19;;;;PGI-520;8714574564333;67010
+50135148;20001109;Pelikan;4105615;C36C37;Ink cartridge multi pack black PGI+CLI;145222400;Ink cartridge multi pack;black;T;2;3425;;;3.425 pages, 9,00 ml, Pack=2;9;;;1509;;4018474105615;50674
+50284022;20000264;Canon;2933 B 010;CLI-521;Ink cartridge multi pack C,M,Y + Photopaper 10x15cm 50 sheet;145222400;Ink cartridge multi pack;cyan magenta yellow;F;3;446;;;446 pages, 9,00 ml, Pack=3;9;;;;CLI-521;8714574630960;66908
+50282638;20001109;Pelikan;4105684;C41;Printhead cartridge black;145221110;Printhead cartridge black;black;T;1;24;;;24 pages, 24,00 ml;24;;;1500;;4018474105684;68125
+50165084;20000264;Canon;4705 A 046;BCI-6 BK;Ink cartridge black twin pack;145222110;Ink cartridge black;black;F;2;210;;;210 pages, 13,00 ml, Pack=2;13;;;958;BCI-6;8714574572147;10095157
+50161143;20000264;Canon;0621 B 030;CLI-8 GP-501;Ink cartridge multi pack C,M,Y +GP-501 10X15cm 50 sheet;145222400;Ink cartridge multi pack;cyan magenta yellow;F;3;;;;3x13ml;;;;1505;CLI-8;;23872
+50152492;20000264;Canon;4709 A 018;BCI-6 PCPM;Ink cartridge multi pack LC,LM;145222400;Ink cartridge multi pack;photocyan photomagenta;F;2;280;;;280 pages, 13,00 ml, Pack=2;13;;;958;BCI-6;8714574572437;
+50259095;20001109;Pelikan;4107411;P16;Ink cartridge black pigmented;145222110;Ink cartridge black;black;T;1;593;;;593 pages, 27,00 ml;27;;;1504;;4018474107411;
+50273086;20001109;Pelikan;361714;C29;Ink cartridge magenta;145222230;Ink cartridge magenta;magenta;T;1;981;;;981 pages, 13,00 ml;13;;;1505;;4018474361714;35292
+50246119;20001109;Pelikan;359711;C26 C26;Ink cartridge black pigmented twin pack;145222110;Ink cartridge black;black;T;2;593;;;593 pages, 27,00 ml, Pack=2;27;;;1504;;4018474359711;51151

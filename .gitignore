@@ -1,0 +1,14 @@
+# Ignore WordPress Core
+wp-admin/
+wp-includes/
+*.php
+!wp-content/
+
+# Ignore XAMPP/System files
+.DS_Store
+thumbs.db
+error_log
+node_modules/
+
+# Ignore your temporary Bechlem CSV files
+wp-content/plugins/bechlem-importer/imports/*.csv
