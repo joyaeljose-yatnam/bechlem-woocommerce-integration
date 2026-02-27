@@ -1,7 +1,7 @@
 # Ignore WordPress Core
 wp-admin/
 wp-includes/
-*.php
+/*.php
 !wp-content/
 
 # Ignore XAMPP/System files
