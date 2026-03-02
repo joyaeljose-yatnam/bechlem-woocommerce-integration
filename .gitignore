@@ -12,3 +12,6 @@ node_modules/
 
 # Ignore your temporary Bechlem CSV files
 wp-content/plugins/bechlem-importer/imports/*.csv
+
+# Ignore WooCommerce logs
+wp-content/uploads/wc-logs
