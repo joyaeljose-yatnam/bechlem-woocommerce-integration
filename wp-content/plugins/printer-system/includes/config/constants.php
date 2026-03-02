@@ -54,3 +54,8 @@ define('PS_QUERY_DEBUG_TEMPLATE', 'debug_template');
 
 // Auto-sync settings
 define('PS_AUTO_SYNC_TAXONOMY', true); // Auto-sync taxonomy during mapping import
+
+// Bechlem Image Sync Settings
+define('PS_PICTURE_BASE_URL', 'https://api.bechlem.de/v12/picture');
+define('PS_PICTURE_SYNC_BATCH_LIMIT', 20);
+define('PS_PICTURE_IMAGE_FORMAT', 'jpg');
