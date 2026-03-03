@@ -50,6 +50,7 @@ define('PS_QUERY_IMPORT_SERIES', 'import_series');
 define('PS_QUERY_IMPORT_PRINTERS', 'import_printers');
 define('PS_QUERY_IMPORT_MAPPING', 'import_mapping');
 define('PS_QUERY_SYNC_TAXONOMY', 'sync_product_taxonomy');
+define('PS_QUERY_SYNC_IMAGES', 'sync_product_images');
 define('PS_QUERY_DEBUG_TEMPLATE', 'debug_template');
 
 // Auto-sync settings

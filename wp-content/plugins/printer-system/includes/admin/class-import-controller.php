@@ -52,6 +52,10 @@ class PS_Import_Controller {
         if (isset($_GET[PS_QUERY_SYNC_TAXONOMY])) {
             self::sync_product_taxonomy();
         }
+
+        if (isset($_GET[PS_QUERY_SYNC_IMAGES])) {
+            self::sync_product_images();
+        }
     }
     
     /**
@@ -108,6 +112,16 @@ class PS_Import_Controller {
     private static function sync_product_taxonomy() {
         $syncer = new PS_Product_Taxonomy_Sync();
         $syncer->sync_all_products();
+        $syncer->display_results();
+        exit;
+    }
+
+    /**
+     * Sync product images from Bechlem API
+     */
+    private static function sync_product_images() {
+        $syncer = new Bechlem_Image_Sync();
+        $syncer->run_full_sync();
         $syncer->display_results();
         exit;
     }

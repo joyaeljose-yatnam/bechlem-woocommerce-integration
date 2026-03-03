@@ -31,13 +31,14 @@ require_once PS_PLUGIN_DIR . 'includes/core/class-supply-mapper.php';
 require_once PS_PLUGIN_DIR . 'includes/core/class-activator.php';
 
 // Load admin classes
-if (is_admin() || (defined('DOING_CRON') && DOING_CRON) || isset($_GET['test_import']) || isset($_GET['import_brands']) || isset($_GET['import_series']) || isset($_GET['import_printers']) || isset($_GET['import_mapping']) || isset($_GET['sync_product_taxonomy'])) {
+if (is_admin() || (defined('DOING_CRON') && DOING_CRON) || isset($_GET['test_import']) || isset($_GET['import_brands']) || isset($_GET['import_series']) || isset($_GET['import_printers']) || isset($_GET['import_mapping']) || isset($_GET['sync_product_taxonomy']) || isset($_GET['sync_product_images'])) {
     require_once PS_PLUGIN_DIR . 'includes/admin/importers/class-base-importer.php';
     require_once PS_PLUGIN_DIR . 'includes/admin/importers/class-brand-importer.php';
     require_once PS_PLUGIN_DIR . 'includes/admin/importers/class-series-importer.php';
     require_once PS_PLUGIN_DIR . 'includes/admin/importers/class-printer-importer.php';
     require_once PS_PLUGIN_DIR . 'includes/admin/importers/class-mapping-importer.php';
     require_once PS_PLUGIN_DIR . 'includes/admin/importers/class-product-taxonomy-sync.php';
+    require_once PS_PLUGIN_DIR . 'includes/admin/importers/class-bechlem-image-sync.php';
     require_once PS_PLUGIN_DIR . 'includes/admin/class-import-controller.php';
 }
 
@@ -52,7 +53,7 @@ function ps_init_plugin() {
     PS_Template_Loader::init();
     
     // Initialize import controller
-    if (is_admin() || isset($_GET['test_import']) || isset($_GET['import_brands']) || isset($_GET['import_series']) || isset($_GET['import_printers']) || isset($_GET['import_mapping']) || isset($_GET['sync_product_taxonomy'])) {
+    if (is_admin() || isset($_GET['test_import']) || isset($_GET['import_brands']) || isset($_GET['import_series']) || isset($_GET['import_printers']) || isset($_GET['import_mapping']) || isset($_GET['sync_product_taxonomy']) || isset($_GET['sync_product_images'])) {
         PS_Import_Controller::init();
     }
 }
