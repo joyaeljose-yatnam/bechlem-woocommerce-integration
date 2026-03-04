@@ -20,7 +20,8 @@ class PS_Product_Taxonomy_Sync {
         'processed' => 0,
         'synced' => 0,
         'skipped' => 0,
-        'total_assignments' => 0
+        'total_assignments' => 0,
+        'messages' => []
     ];
     
     /**
@@ -51,6 +52,7 @@ class PS_Product_Taxonomy_Sync {
             
             // Check if product exists
             if (get_post_type($supply_id) !== PS_POST_TYPE) {
+                array_push($this->stats['messages'], 'Product not found or incorrect type');
                 $this->stats['skipped']++;
                 continue;
             }
@@ -62,6 +64,7 @@ class PS_Product_Taxonomy_Sync {
                 $this->stats['synced']++;
                 $this->stats['total_assignments'] += $assigned_count;
             } else {
+                array_push($this->stats['messages'], 'No taxonomy terms assigned');
                 $this->stats['skipped']++;
             }
         }

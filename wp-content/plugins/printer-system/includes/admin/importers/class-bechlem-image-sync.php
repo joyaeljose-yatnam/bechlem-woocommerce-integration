@@ -86,14 +86,14 @@ class Bechlem_Image_Sync {
         foreach ( $product_ids as $product_id ) {
             // use the post ID for the Bechlem API; if you ever store a
             // custom _bechlem_id meta value, it will be used instead.
-            $bechlem_id = get_post_meta( $product_id, '_bechlem_id', true );
+            $bechlem_id = $this->get_supply_bechlem_id($product_id);
             if ( ! $bechlem_id ) {
                 $bechlem_id = $product_id;
             }
 
             $title = get_the_title( $product_id );
 
-            $url = "{$this->api_base_url}?iditem={$bechlem_id}&format={$this->image_format}";
+            $url = "{$this->api_base_url}?iditem={$bechlem_id}";
 
             $result = $this->sideload_image($product_id, $url, $title);
 
@@ -171,5 +171,15 @@ class Bechlem_Image_Sync {
         }
         
         return $attachment_id; // WP_Error returned if failed
+    }
+
+    private function get_supply_bechlem_id($product_id) {
+        $meta_value = get_post_meta($product_id, PS_META_OLD_SLUG, true);
+
+        if (!$meta_value) {
+            return false;
+        }
+
+        return str_replace(PS_IMPORT_PLACEHOLDER_PREFIX, '', $meta_value);
     }
 }
