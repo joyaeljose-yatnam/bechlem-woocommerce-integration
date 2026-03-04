@@ -76,3 +76,22 @@ register_deactivation_hook(__FILE__, ['PS_Activator', 'deactivate']);
 function ps_get_supplies_by_printer($printer_term_id) {
     return PS_Supply_Mapper::get_supplies_by_printer($printer_term_id);
 }
+
+add_action('woocommerce_product_options_inventory_product_data', function() {
+    woocommerce_wp_text_input([
+        'id'          => 'iditem_supply',
+        'label'       => 'Supply Bechlem ID',
+        'desc_tip'    => true,
+        'description' => 'External ERP Supply ID'
+    ]);
+});
+
+add_action('woocommerce_process_product_meta', function($post_id) {
+    if (isset($_POST['iditem_supply'])) {
+        update_post_meta(
+            $post_id,
+            'iditem_supply',
+            sanitize_text_field($_POST['iditem_supply'])
+        );
+    }
+});

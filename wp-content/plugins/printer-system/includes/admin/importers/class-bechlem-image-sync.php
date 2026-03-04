@@ -93,8 +93,7 @@ class Bechlem_Image_Sync {
 
             $title = get_the_title( $product_id );
 
-            $url = "{$this->api_base_url}?iditem={$bechlem_id}";
-
+            $url = "{$this->api_base_url}?iditem={$bechlem_id}&format={$this->image_format}";
             $result = $this->sideload_image($product_id, $url, $title);
 
             if (!is_wp_error($result) && $result) {
@@ -158,25 +157,81 @@ class Bechlem_Image_Sync {
     /**
      * 4. THE SIDELOADER
      */
+    /**
+     * Download a remote image and attach it to a product.
+     *
+     * The Bechlem API returns URLs that don't contain a recognised file
+     * extension.  `media_sideload_image()` insists on seeing a literal
+     * ".jpg", ".png" etc. before it will even attempt a request, so every
+     * call was failing with "Invalid image URL.".  We replicate the core
+     * logic here without that restriction and with a slightly longer timeout
+     * to allow for the two‑second redirect.
+     *
+     * @param int    $product_id Post ID to associate the attachment with.
+     * @param string $url        Remote location of the image.
+     * @param string $title      Alt text / title for the attachment.
+     * @return int|WP_Error      Attachment ID on success or WP_Error on failure.
+     */
+
+    // …inside class Bechlem_Image_Sync…
+
     private function sideload_image($product_id, $url, $title) {
-        require_once(ABSPATH . 'wp-admin/includes/media.php');
-        require_once(ABSPATH . 'wp-admin/includes/file.php');
-        require_once(ABSPATH . 'wp-admin/includes/image.php');
+        require_once ABSPATH . 'wp-admin/includes/media.php';
+        require_once ABSPATH . 'wp-admin/includes/file.php';
+        require_once ABSPATH . 'wp-admin/includes/image.php';
 
-        $attachment_id = media_sideload_image($url, $product_id, $title, 'id');
+        // bump the HTTP timeout for our API host (default is 5s)
+        add_filter( 'http_request_timeout', function( $timeout, $request_url ) {
+            if ( false !== strpos( $request_url, $this->api_base_url ) ) {
+                return 30;
+            }
+            return $timeout;
+        }, 10, 2 );
 
-        if (!is_wp_error($attachment_id)) {
-            set_post_thumbnail($product_id, $attachment_id);
+        $tmp_file = download_url( $url );
+        remove_all_filters( 'http_request_timeout' );
+
+        if ( is_wp_error( $tmp_file ) ) {
+            return $tmp_file;
+        }
+
+        // generate a sensible filename.  If the URL has a name use it; otherwise
+        // sniff the content for the real image type so the extension is correct.
+        $filename = wp_basename( parse_url( $url, PHP_URL_PATH ) );
+        if ( empty( $filename ) || false === strpos( $filename, '.' ) ) {
+            $ext = '';
+            if ( function_exists( 'getimagesize' ) ) {
+                $info = @getimagesize( $tmp_file );
+                if ( ! empty( $info[2] ) ) {
+                    $ext = image_type_to_extension( $info[2], false );
+                }
+            }
+            if ( empty( $ext ) ) {
+                $filetype = wp_check_filetype( $tmp_file );
+                $ext      = $filetype['ext'] ?: $this->image_format;
+            }
+            $filename = 'bechlem-image.' . $ext;
+        }
+
+        $file_array = [
+            'name'     => $filename,
+            'tmp_name' => $tmp_file,
+        ];
+
+        $attachment_id = media_handle_sideload( $file_array, $product_id, $title );
+        if ( is_wp_error( $attachment_id ) ) {
+            @unlink( $tmp_file );
             return $attachment_id;
         }
-        
-        return $attachment_id; // WP_Error returned if failed
+
+        set_post_thumbnail( $product_id, $attachment_id );
+        return $attachment_id;
     }
 
     private function get_supply_bechlem_id($product_id) {
         $meta_value = get_post_meta($product_id, PS_META_OLD_SLUG, true);
 
-        if (!$meta_value) {
+        if (! $meta_value) {
             return false;
         }
 
