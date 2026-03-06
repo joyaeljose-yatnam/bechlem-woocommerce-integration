@@ -95,3 +95,41 @@ add_action('woocommerce_process_product_meta', function($post_id) {
         );
     }
 });
+
+add_filter( 'woocommerce_csv_product_import_mapping_options', function( $options, $item ) {
+    // Add a dedicated mapping option for the custom meta field used by your plugin
+    $options['meta:iditem_supply'] = __( 'Supply Bechlem ID', 'printer-system' );
+
+    // Add a mapping option for the printer hierarchy taxonomy.
+    $options['printer_hierarchy'] = __( 'Printer (printer_hierarchy)', 'printer-system' );
+
+    return $options;
+}, 10, 2 );
+/**
+ * Capture the mapped printer hierarchy field so we can assign it to the product after import.
+ */
+add_filter( 'woocommerce_product_importer_parsed_data', function( $data, $importer ) {
+    if ( ! empty( $data['printer_hierarchy'] ) ) {
+        $data['ps_printer_hierarchy_terms'] = $data['printer_hierarchy'];
+    }
+
+    return $data;
+}, 10, 2 );
+
+/**
+ * After a product is created/updated during CSV import, assign printer taxonomy terms.
+ */
+add_action( 'woocommerce_product_import_inserted_product_object', function( $product, $data ) {
+    if ( empty( $data['ps_printer_hierarchy_terms'] ) ) {
+        return;
+    }
+
+    // Allow comma-separated term names, e.g. "Brand > Series > Printer" or "Printer Name".
+    $term_names = array_map( 'trim', explode( ',', $data['ps_printer_hierarchy_terms'] ) );
+    $term_names = array_filter( $term_names );
+    if ( empty( $term_names ) ) {
+        return;
+    }
+
+    wp_set_object_terms( $product->get_id(), $term_names, PS_TAXONOMY_NAME, false );
+}, 10, 2 );
